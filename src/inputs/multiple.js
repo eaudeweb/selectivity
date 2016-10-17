@@ -456,7 +456,8 @@ var callSuper = Selectivity.inherits(MultipleInput, Selectivity, {
             removable: !this.options.readOnly
         }, item)));
 
-        this.input.parentNode.insertBefore(el, this.input);
+		// this.input.parentNode.insertBefore(el, this.input);
+		$(this.el).find('.selectivity-multiple-input-container').append(el);
     },
 
     /**
